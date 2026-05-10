@@ -1,6 +1,4 @@
-/* =====================================================
-   BASE RESET — prevents horizontal overflow / cutting
-   ===================================================== */
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -22,9 +20,7 @@ body {
     min-width: 0;
 }
 
-/* =====================================================
-   NAVBAR
-   ===================================================== */
+/* NAVBAR */
 
 .navbar {
     padding: 0 1.5rem;
@@ -73,7 +69,7 @@ body {
     color: #4B0082;
 }
 
-/* --- Logo (right side, same as original) --- */
+/*Logo */
 #logo {
     margin: 0;
     background-color: #2E1065;
@@ -87,7 +83,6 @@ body {
     display: block;
 }
 
-/* --- Hamburger icon — works with ☰ text inside div --- */
 .hamburger {
     display: none;
     align-items: center;
@@ -104,7 +99,7 @@ body {
     margin-left: 0.5rem;
 }
 
-/* Also support span-based hamburger if used */
+
 .hamburger span {
     display: block;
     width: 1.75rem;
@@ -118,7 +113,7 @@ body {
 .hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .hamburger.open span:nth-child(3) { transform: translateY(-9.5px) rotate(-45deg); }
 
-/* --- .navlinks wrapper div (your HTML wraps <ul> inside .navlinks) --- */
+
 .navlinks {
     display: flex;
     align-items: center;
@@ -138,9 +133,7 @@ body {
     min-width: 0;
 }
 
-/* =====================================================
-   HEADER
-   ===================================================== */
+/* HEADER */
 
 header {
     background-color: #4B0082;
@@ -149,9 +142,7 @@ header {
     width: 100%;
 }
 
-/* =====================================================
-   DETAILS BAR
-   ===================================================== */
+/*DETAILS BAR*/
 
 .details {
     text-align: left;
@@ -162,9 +153,7 @@ header {
     border-bottom: 1px solid #D8B4FE;
 }
 
-/* =====================================================
-   HERO
-   ===================================================== */
+/* HERO */
 
 .hero {
     padding: 3.75rem 2.5rem;
@@ -182,18 +171,14 @@ header {
     margin-bottom: 0.75rem;
 }
 
-/* =====================================================
-   TEXT
-   ===================================================== */
+/* TEXT */
 
 .text {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: #333;
 }
 
-/* =====================================================
-   FEATURE CARDS SECTION
-   ===================================================== */
+/*FEATURE CARDS SECTION */
 
 .features-section {
     padding: 3.125rem 1.25rem;
@@ -228,9 +213,7 @@ header {
 .cards p::first-letter { font-size: 1.2em; font-weight: bold; color: #7C3AED; margin-right: 1px; }
 .cards h3::before { content: "⭐ "; color: #5708e0; }
 
-/* =====================================================
-   BUTTONS
-   ===================================================== */
+/* BUTTONS */
 
 #btn {
     width: 100%;
@@ -270,9 +253,7 @@ header {
     box-shadow: 0 0 20px #6a5cff, 0 0 40px #1e4ff0;
 }
 
-/* =====================================================
-   TYPOGRAPHY
-   ===================================================== */
+/* TYPOGRAPHY */
 
 .main-heading {
     font-size: clamp(1.8rem, 5vw, 4rem);
@@ -298,9 +279,7 @@ header {
     border-radius: 5px;
 }
 
-/* =====================================================
-   VIDEO & AUDIO
-   ===================================================== */
+/*VIDEO & AUDIO*/
 
 video {
     max-width: 80%;
@@ -325,9 +304,7 @@ video:hover, audio:hover {
 .spacer { margin-bottom: 2em; }
 .gif, .audiofile { margin-left: 1.25rem; }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
+/*FOOTER*/
 
 footer {
     margin-top: 10%;
@@ -337,9 +314,7 @@ footer {
     color: #4B0082;
 }
 
-/* =====================================================
-   DASHBOARD
-   ===================================================== */
+/* DASHBOARD */
 
 .dashboard { padding: 2.5rem; }
 
@@ -468,7 +443,7 @@ footer {
     max-width: 400px;
 }
 
-/* Each upcoming exam row: name on left, date on right, no giant gap */
+
 .upcoming ul li {
     display: flex;
     align-items: center;
@@ -497,9 +472,7 @@ footer {
 .upcoming ul li span { font-weight: 500; color: #333; }
 .pinned ul li::before { content: "📌 "; }
 
-/* =====================================================
-   BOOKMARKS
-   ===================================================== */
+/*BOOKMARKS */
 
 .section-box {
     max-width: 700px;
@@ -546,9 +519,7 @@ footer {
 
 .bookmark-list i { color: #7C3AED; }
 
-/* =====================================================
-   EXAM TRACKER
-   ===================================================== */
+/*EXAM TRACKER*/
 
 .exam-form {
     display: grid;
@@ -605,9 +576,7 @@ footer {
 .revise-btn   { background: #EAB308; }
 .delete-btn   { background: #EF4444; }
 
-/* =====================================================
-   ABOUT PAGE
-   ===================================================== */
+/*ABOUT PAGE */
 
 .about-container { width: 90%; margin: 2.5rem auto; text-align: center; }
 
@@ -669,9 +638,7 @@ footer {
     font-size: 0.875rem;
 }
 
-/* =====================================================
-   HELP PAGE
-   ===================================================== */
+/*HELP PAGE*/
 
 .help-container { width: 90%; margin: 2.5rem auto; }
 
@@ -687,9 +654,7 @@ footer {
 .help-box ol { padding-left: 1.25rem; }
 .help-box li { margin-bottom: 0.625rem; font-size: 0.9375rem; }
 
-/* =====================================================
-   FAQ ACCORDION
-   ===================================================== */
+/*FAQ ACCORDION */
 
 .faq-item { margin-bottom: 0.9375rem; }
 
@@ -726,9 +691,7 @@ footer {
 .faq-answer.show { padding: 0.9375rem 1.25rem; max-height: 200px; }
 .faq-question.active i { transform: rotate(180deg); transition: 0.3s; }
 
-/* =====================================================
-   SEARCH BAR
-   ===================================================== */
+/*SEARCH BAR */
 
 .search-container {
     width: clamp(280px, 60%, 700px);
@@ -751,9 +714,7 @@ footer {
 .clear-btn { position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); cursor: pointer; color: #999; }
 .empty-state { margin-top: 2rem; font-size: 1.1rem; color: #555; }
 
-/* =====================================================
-   STREAK
-   ===================================================== */
+/*STREAK*/
 
 .streak-wrapper {
     width: 100%;
@@ -848,9 +809,7 @@ footer {
 .demo-buttons { text-align: center; margin-top: 0.625rem; }
 .demo-buttons button { margin: 5px; padding: 6px 12px; border: none; background: #7C3AED; color: white; border-radius: 6px; cursor: pointer; }
 
-/* =====================================================
-   TOAST
-   ===================================================== */
+/*TOAST */
 
 .toast {
     position: fixed;
@@ -876,16 +835,14 @@ footer {
     to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 
-/* =====================================================
-   RESPONSIVE — TABLET  (max-width: 900px)
-   ===================================================== */
+/*RESPONSIVE — TABLET  (max-width: 900px)*/
 
 @media (max-width: 900px) {
 
-    /* Show hamburger */
+    
     .hamburger { display: flex; }
 
-    /* Hide the navlinks wrapper + its ul — shown via .open */
+   
     .navlinks {
         display: none;
         flex-direction: column;
@@ -903,7 +860,6 @@ footer {
 
     .navlinks.open { display: flex; }
 
-    /* Also support direct ul if HTML has no .navlinks wrapper */
     .navbar > ul {
         display: none;
         flex-direction: column;
@@ -939,28 +895,26 @@ footer {
     .navlinks ul li:last-child a,
     .navbar ul li:last-child a { border-bottom: none; }
 
-    /* Cards wrap */
+   
     .cards { width: clamp(180px, 44vw, 280px); }
 
-    /* Dashboard grid */
+   
     .dashboard-actions { grid-template-columns: 1fr; }
 
-    /* About */
+   
     .mv-grid { grid-template-columns: 1fr; }
 
-    /* Subject cards — 2 per row on tablet */
+    
     .subject-card { flex: 1 1 calc(50% - 1.25rem); max-width: calc(50% - 0.625rem); }
 
-    /* Media */
+   
     video { max-width: 95%; }
     audio { width: 70%; }
 
     .search-container { width: 80%; }
 }
 
-/* =====================================================
-   RESPONSIVE — MOBILE  (max-width: 600px)
-   ===================================================== */
+/*RESPONSIVE — MOBILE  (max-width: 600px)*/
 
 @media (max-width: 600px) {
 
@@ -972,7 +926,7 @@ footer {
 
     .features-section { padding: 1.5rem 0.5rem; }
 
-    /* Cards go full width on mobile */
+    
     .cards {
         display: block;
         width: calc(100% - 1rem);
@@ -991,7 +945,7 @@ footer {
     .dashboard-card { padding: 1rem; }
     .progress-cards { flex-direction: column; }
 
-    /* Subject cards full width on mobile */
+    
     .subject-card { flex: 1 1 100%; max-width: 100%; }
     .exam-form { grid-template-columns: 1fr; }
     .subjects-grid { flex-direction: column; align-items: stretch; }
@@ -1026,9 +980,7 @@ footer {
     .mv-grid { grid-template-columns: 1fr; }
 }
 
-/* =====================================================
-   RESPONSIVE — SMALL MOBILE  (max-width: 380px)
-   ===================================================== */
+/*RESPONSIVE — SMALL MOBILE  (max-width: 380px)*/
 
 @media (max-width: 380px) {
 
@@ -1047,13 +999,11 @@ footer {
 
     .toast { font-size: 0.875rem; padding: 0.625rem 1rem; }
 
-    /* Cards fill the screen */
+  
     .cards { width: 100%; margin: 0.5rem 0; }
 }
 
-/* =====================================================
-   RESPONSIVE — VERY TINY  (max-width: 260px)
-   ===================================================== */
+/*RESPONSIVE — VERY TINY  (max-width: 260px) */
 
 @media (max-width: 260px) {
 
@@ -1082,11 +1032,6 @@ footer {
 
 
 
-/* =====================================================
-   DARK MODE TOGGLE BUTTON
-   — sits next to hamburger, never replaces it
-   ===================================================== */
-
 #darkToggle {
     background: rgba(255, 255, 255, 0.12);
     border: 1.5px solid rgba(255, 255, 255, 0.3);
@@ -1098,7 +1043,7 @@ footer {
     flex-shrink: 0;
     line-height: 1.6;
     font-family: 'Poppins', sans-serif;
-    order: 99;          /* always pushed to end of navbar flex row */
+    order: 99;          
     margin-left: 0.5rem;
     transition: background 0.3s ease, border-color 0.3s ease;
     display: flex;
@@ -1110,7 +1055,6 @@ footer {
     background: rgba(255, 255, 255, 0.22);
 }
 
-/* on very small screens shrink it */
 @media (max-width: 380px) {
     #darkToggle {
         font-size: 0.85rem;
@@ -1118,10 +1062,6 @@ footer {
     }
 }
 
-/* =====================================================
-   SMOOTH COLOR TRANSITIONS — applied globally
-   so every element fades when toggling
-   ===================================================== */
 
 body, body *:not(video):not(audio) {
     transition:
@@ -1131,20 +1071,13 @@ body, body *:not(video):not(audio) {
         box-shadow       0.3s ease;
 }
 
-/* =====================================================
-   DARK MODE COLOUR PALETTE (CSS custom properties)
 
-   ===================================================== */
-
-/* --- ROOT body --- */
 body.dark {
     background-color: #3d2860;
     color: #ede8f5;
 }
 
-/* =====================================================
-   NAVBAR
-   ===================================================== */
+
 
 body.dark .navbar {
     background-color: #3e0a5e;
@@ -1167,7 +1100,6 @@ body.dark .navlinks ul li a:hover {
     color: #ffffff;
 }
 
-/* mobile dropdown bg */
 @media (max-width: 900px) {
     body.dark .navlinks {
         background-color: #12092a;
@@ -1187,9 +1119,6 @@ body.dark #darkToggle {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-/* =====================================================
-   DETAILS BAR
-   ===================================================== */
 
 body.dark .details {
     background-color: #241535;
@@ -1197,9 +1126,6 @@ body.dark .details {
     border-bottom-color: #3b2560;
 }
 
-/* =====================================================
-   HERO
-   ===================================================== */
 
 body.dark .hero {
     background-color: #1a1128;
@@ -1214,9 +1140,6 @@ body.dark .herotext h1 {
     color: #c4a0ff;
 }
 
-/* =====================================================
-   TEXT
-   ===================================================== */
 
 body.dark .text {
     color: #b8accc;
@@ -1226,9 +1149,6 @@ body.dark p {
     color: #b8accc;
 }
 
-/* =====================================================
-   HEADINGS
-   ===================================================== */
 
 body.dark .headings {
     color: #c4a0ff;
@@ -1239,9 +1159,6 @@ body.dark .main-heading::after {
     background-color: #9b5df5;
 }
 
-/* =====================================================
-   FEATURE CARDS (.cards — index page)
-   ===================================================== */
 
 body.dark .cards {
     background: linear-gradient(135deg, #2a1645 0%, #241238 50%, #1e0e30 100%);
@@ -1263,9 +1180,6 @@ body.dark .cards p::first-letter {
     color: #9b5df5;
 }
 
-/* =====================================================
-   BUTTONS
-   ===================================================== */
 
 body.dark #btn {
     background-color: #6d28d9;
@@ -1285,9 +1199,6 @@ body.dark .btn-main:hover {
     box-shadow: 0 0 20px #6d28d9, 0 0 40px #4338ca;
 }
 
-/* =====================================================
-   VIDEO & AUDIO
-   ===================================================== */
 
 body.dark video {
     border-color: #5b21b6;
@@ -1298,9 +1209,6 @@ body.dark audio:hover {
     box-shadow: 0 12px 25px rgba(107, 33, 168, 0.4);
 }
 
-/* =====================================================
-   FOOTER
-   ===================================================== */
 
 body.dark footer {
     background-color: #12092a;
@@ -1311,9 +1219,6 @@ body.dark footer .text {
     color: #7d6d9a;
 }
 
-/* =====================================================
-   DASHBOARD
-   ===================================================== */
 
 body.dark .dashboard-welcome {
     background-color: #241535;
@@ -1324,7 +1229,6 @@ body.dark .dashboard-welcome h1 {
     text-shadow: 2px 2px 14px rgba(155, 93, 245, 0.4);
 }
 
-/* Quick action cards */
 body.dark .dashboard-card {
     background: linear-gradient(135deg, #2a1645 0%, #241238 50%, #1e0e30 100%);
     border-color: #3b2560;
@@ -1347,7 +1251,6 @@ body.dark .dashboard-card p {
     color: #c4a0ff;
 }
 
-/* Progress boxes */
 body.dark .progress-box {
     background-color: #241535;
     border-top-color: #9b5df5;
@@ -1371,7 +1274,6 @@ body.dark .progress-fill {
     background-color: #9b5df5;
 }
 
-/* Recent activity */
 body.dark .recent-activity ul {
     background-color: #241535;
     box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
@@ -1386,7 +1288,6 @@ body.dark .recent-activity ul li::before {
     color: #9b5df5;
 }
 
-/* Focus box */
 body.dark .focus-box {
     background-color: #241535;
     border-left-color: #ef4444;
@@ -1400,7 +1301,6 @@ body.dark .focus-box p {
     color: #b8accc;
 }
 
-/* Upcoming exams + pinned */
 body.dark .upcoming ul,
 body.dark .pinned ul {
     background-color: #241535;
@@ -1416,9 +1316,6 @@ body.dark .date {
     color: #a78bfa;
 }
 
-/* =====================================================
-   BOOKMARKS / UPLOAD
-   ===================================================== */
 
 body.dark .section-box {
     background-color: #241535;
@@ -1453,9 +1350,6 @@ body.dark .bookmark-list i {
     color: #a78bfa;
 }
 
-/* =====================================================
-   EXAM TRACKER
-   ===================================================== */
 
 body.dark .exam-form input,
 body.dark .exam-form select {
@@ -1472,7 +1366,7 @@ body.dark .form-group label {
     color: #c4a0ff;
 }
 
-/* Subject cards */
+
 body.dark .subject-card {
     background: linear-gradient(135deg, #2a1645 0%, #241238 50%, #1e0e30 100%);
     border-color: #3b2560;
@@ -1497,11 +1391,6 @@ body.dark .subject-progress {
     background: #3b2560;
 }
 
-/* badge colours stay the same (green/amber/red are fine in dark) */
-
-/* =====================================================
-   ABOUT PAGE
-   ===================================================== */
 
 body.dark .about-intro {
     background-color: #241535;
@@ -1554,9 +1443,6 @@ body.dark .tech-stack span {
     color: #ede8f5;
 }
 
-/* =====================================================
-   HELP PAGE
-   ===================================================== */
 
 body.dark .help-box {
     background-color: #241535;
@@ -1570,9 +1456,7 @@ body.dark .help-box li {
     color: #c4b8dc;
 }
 
-/* =====================================================
-   FAQ ACCORDION
-   ===================================================== */
+
 
 body.dark .faq-question {
     background: linear-gradient(90deg, #5b21b6, #4c1d95);
@@ -1589,9 +1473,6 @@ body.dark .faq-answer {
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.35);
 }
 
-/* =====================================================
-   SEARCH BAR
-   ===================================================== */
 
 body.dark .search-container input {
     background-color: #241535;
@@ -1620,18 +1501,13 @@ body.dark .empty-state {
     color: #7d6d9a;
 }
 
-/* =====================================================
-   STREAK BOX
-   ===================================================== */
+
 
 body.dark .streak-box {
     background: linear-gradient(135deg, #5b21b6, #3b0f8a);
     box-shadow: 0px 12px 30px rgba(91, 33, 182, 0.5);
 }
 
-/* =====================================================
-   TOAST
-   ===================================================== */
 
 body.dark .toast {
     background: #5b21b6;

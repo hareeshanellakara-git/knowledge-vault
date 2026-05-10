@@ -8,7 +8,7 @@ let activities = [];
 let streak = 0;
 let lastActiveDate = null;
 
-// Load from backend
+
 fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
     .then(res => res.json())
     .then(data => {
@@ -19,7 +19,7 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
     });
 
 
-// Load from backend
+
 fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
     .then(res => res.json())
     .then(data => {
@@ -98,7 +98,7 @@ function renderSubjects() {
     });
 }
 
-/* ---------- ACTIONS ---------- */
+/* ACTIONS */
 
 function completeSub(i) {
     subjects[i].progress = 100;
@@ -123,7 +123,7 @@ function deleteSub(i) {
     save();
 }
 
-/* ---------- SAVE + SYNC ---------- */
+/* SAVE + SYNC  */
 
 function save() {
 
@@ -160,14 +160,13 @@ function save() {
     renderSubjects();
 }
 
-/* ---------- ACTIVITY ---------- */
+/*ACTIVITY */
 
 function addActivity(text) {
     activities.unshift(text);
     if (activities.length > 5) activities.pop();
 }
 
-/* ---------- DASHBOARD SYNC ---------- */
 
 function syncDashboard() {
 
@@ -188,7 +187,7 @@ function syncDashboard() {
     localStorage.setItem("stats", JSON.stringify(stats));
 }
 
-/* ---------- COUNTDOWN ---------- */
+
 
 function countdown(date) {
 
@@ -204,7 +203,7 @@ function countdown(date) {
     return "✅ Completed";
 }
 
-/* ---------- SEARCH AND FILTER ---------- */
+/* SEARCH AND FILTER */
 function renderFiltered(list) {
 
     grid.innerHTML = "";
@@ -273,12 +272,12 @@ function updateStreak() {
 
         if (diff === 1) {
             streak++;
-            showStreakPopup(); // 🔥 ADD THIS
+            showStreakPopup(); 
         }
         else if (diff > 1) {
             streak = 1; // streak broken
         }
-        // if same day → no increment
+        
     }
 
     lastActiveDate = today;

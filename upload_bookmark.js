@@ -9,7 +9,7 @@ document.querySelector("#upload").appendChild(uploadList);
 let uploads = [];
 let bookmarks = [];
 
-/* -------- LOAD FROM BACKEND -------- */
+/* LOAD FROM BACKEND */
 
 fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
 .then(res => res.json())
@@ -21,7 +21,7 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
 });
 
 
-/* -------- SAVE FUNCTION -------- */
+/* SAVE FUNCTION */
 
 function saveToBackend(){
 
@@ -41,7 +41,7 @@ function saveToBackend(){
 }
 
 
-/* -------- UPLOAD SUBMIT -------- */
+/*UPLOAD SUBMIT */
 
 uploadForm.addEventListener("submit", function(e){
     e.preventDefault();
@@ -64,7 +64,7 @@ uploadForm.addEventListener("submit", function(e){
 });
 
 
-/* -------- DISPLAY UPLOADS -------- */
+/*DISPLAY UPLOADS */
 
 function displayUploads(){
 
@@ -85,7 +85,7 @@ function displayUploads(){
 }
 
 
-/* -------- DELETE UPLOAD -------- */
+/*DELETE UPLOAD */
 
 uploadList.addEventListener("click", function(e){
 
@@ -100,15 +100,13 @@ uploadList.addEventListener("click", function(e){
 });
 
 
-/* ===============================
-   BOOKMARKS
-================================ */
+/* BOOKMARKS */
 
 let bookmarkForm = document.querySelector(".bookmark-form");
 let bookmarkList = document.querySelector(".bookmark-list");
 
 
-/* -------- BOOKMARK SUBMIT -------- */
+/* BOOKMARK SUBMIT  */
 
 bookmarkForm.addEventListener("submit", function(e){
     e.preventDefault();
@@ -130,7 +128,7 @@ bookmarkForm.addEventListener("submit", function(e){
 });
 
 
-/* -------- DISPLAY BOOKMARKS -------- */
+/* DISPLAY BOOKMARKS */
 
 function displayBookmarks(){
 
@@ -151,7 +149,7 @@ function displayBookmarks(){
 }
 
 
-/* -------- DELETE BOOKMARK -------- */
+/*DELETE BOOKMARK */
 
 bookmarkList.addEventListener("click", function(e){
 

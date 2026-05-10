@@ -12,7 +12,7 @@ app.use(express.json());
 const path = require('path');
 const FILE = path.join(__dirname, 'data.json');
 
-/* ---------- GET ALL DATA ---------- */
+
 
 app.get('/data', (req, res) => {
 
@@ -36,7 +36,7 @@ app.get('/data', (req, res) => {
 });
 
 
-/* ---------- SAVE ALL DATA ---------- */
+
 
 app.post('/data', (req, res) => {
 
@@ -52,14 +52,14 @@ app.post('/data', (req, res) => {
 });
 
 
-/* ---------- ROOT CHECK ---------- */
+
 
 app.get('/', (req, res) => {
     res.send("Knowledge Vault Backend Running 🚀");
 });
 
 
-/* ---------- START SERVER ---------- */
+
 
 const PORT = process.env.PORT || 3000;
 

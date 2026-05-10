@@ -13,7 +13,6 @@
 
 <body>
 
-    <!-- Navbar -->
 
     <div class="navbar">
         <div class="navlinks" id="navLinks">
@@ -42,7 +41,7 @@
 
         <p class="main-heading">Upload & Bookmark</p>
 
-        <!-- Upload Section -->
+        
         <section id="upload" class="section-box">
             <h2 class="headings"><i class="fa-solid fa-upload"></i> Upload Notes</h2>
 
@@ -54,7 +53,6 @@
             </form>
         </section>
 
-        <!-- Bookmark Section -->
         <section id="bookmark" class="section-box">
             <h2 class="headings"><i class="fa-solid fa-bookmark"></i> Bookmarks</h2>
 
@@ -95,7 +93,7 @@
             document.getElementById('darkToggle').textContent = isDark ? '☀️' : '🌙';
         }
 
-        // On page load — restore saved preference
+        
         (function () {
             if (localStorage.getItem('darkMode') === 'on') {
                 document.body.classList.add('dark');

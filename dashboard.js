@@ -10,7 +10,7 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
         const activities = data.activities || [];
 
 
-        /* ---------- STREAK ---------- */
+       
 
 
         const streak = data.streak || 0;
@@ -27,20 +27,20 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
             }
         }
 
-        /* ---------- STATS ---------- */
+       
 
         document.getElementById("totalSubjects").textContent = stats.total || 0;
         document.getElementById("completedSubjects").textContent = stats.completed || 0;
         document.getElementById("pendingSubjects").textContent = stats.pending || 0;
 
-        /* ---------- OVERALL BAR ---------- */
+    
 
         const overall = stats.overall || 0;
 
         document.getElementById("overallBar").style.width = overall + "%";
         document.getElementById("overallText").textContent = overall + "% syllabus completed";
 
-        /* ---------- TODAY FOCUS ---------- */
+        /*TODAY FOCUS */
 
         if (subjects.length > 0) {
             const sorted = [...subjects].sort((a, b) => new Date(a.examDate) - new Date(b.examDate));
@@ -50,7 +50,7 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
             document.getElementById("focusPriority").textContent = focus.priority;
         }
 
-        /* ---------- UPCOMING ---------- */
+        /* UPCOMING */
 
         const upcomingList = document.getElementById("upcomingList");
 
@@ -63,7 +63,7 @@ fetch('https://knowledge-vault-backend-u9t7.onrender.com/data')
                 upcomingList.appendChild(li);
             });
 
-        /* ---------- ACTIVITY ---------- */
+        /*ACTIVITY */
 
         const actList = document.getElementById("activityList");
 
